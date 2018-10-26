@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercice 1</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/AngularJS/angularjs-1.7.5.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+<body ng-app="mailApp">
+	<div ng-controller="emailCtrl">
+		<form>
+			<label for="nom">Nom : </label><input type="text" name="nom"  placeholder="Nom" ng-model="nom">
+			<label for="email">Email : </label><input type="text" name="email"  placeholder="Email" ng-model="mail">
+			<label for="sujet">Sujet : </label><input type="text" name="sujet"  placeholder="Sujet" ng-model="sujet">
+			<label for="texte">Texte : </label><textarea name="texte"  placeholder="Texte" ng-model="texte"></textarea>
+			<input type="button" name="Valid"  value="Test" ng-click="check(nom,mail,sujet)">
+		</form>
+	</div>
+</body>
+</html>
